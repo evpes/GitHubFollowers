@@ -9,14 +9,21 @@ import UIKit
 
 class FollowerListVC: UIViewController {
     
+    enum Section {
+        case main
+    }
     var username: String!
+    var followers: [Follower] = []
+    
     var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        configureCollectionView()
+        super.viewDidLoad()        
         configureViewController()
+        configureCollectionView()
         getFollowers()
+        configureDataSource()
     }
     
     
@@ -46,7 +53,7 @@ class FollowerListVC: UIViewController {
         let padding: CGFloat = 12
         let minimumItemSpacing: CGFloat = 10
         let availableWidth = width - (padding * 2) - (minimumItemSpacing * 2)
-        let itemWidth = availableWidth / 3
+        let itemWidth = availableWidth / 2
         
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
@@ -60,12 +67,31 @@ class FollowerListVC: UIViewController {
         NetworkManager.shared.getFollowers(for: username, page: 1) { result in
             switch result {
             case .success(let followers):
-                print("Followers.count = \(followers.count)")
-                print(followers)
+                self.followers = followers
+                self.updateData()
+                
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Error", message: error.rawValue, buttonTitle: "Ok")
             }
         }
+    }
+    
+    
+    func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { collectionView, indexPath, follower in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
+            cell.set(follower: follower)
+            return cell
+        })
+    }
+    
+    
+    func updateData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(followers, toSection: .main)
+        DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true, completion: nil) }
+        
     }
     
         

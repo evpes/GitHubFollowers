@@ -35,6 +35,8 @@ class FollowerCell: UICollectionViewCell {
         
         let padding: CGFloat = 8
         
+        translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
             avatarImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
             avatarImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
