@@ -26,6 +26,7 @@
 		12DCD5EF280EC82300EC4DD9 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5EE280EC82300EC4DD9 /* ErrorMessage.swift */; };
 		12DCD5F22811CF7700EC4DD9 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5F12811CF7700EC4DD9 /* FollowerCell.swift */; };
 		12DCD5F42811D09B00EC4DD9 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5F32811D09B00EC4DD9 /* GFAvatarImageView.swift */; };
+		12DCD5F62817018D00EC4DD9 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5F52817018D00EC4DD9 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		12DCD5EE280EC82300EC4DD9 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		12DCD5F12811CF7700EC4DD9 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		12DCD5F32811D09B00EC4DD9 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		12DCD5F52817018D00EC4DD9 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				12DCD5EE280EC82300EC4DD9 /* ErrorMessage.swift */,
+				12DCD5F52817018D00EC4DD9 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				12DCD5D2280A962600EC4DD9 /* FavoritesListVC.swift in Sources */,
 				12DCD5D4280ABB4F00EC4DD9 /* GFButton.swift in Sources */,
 				12DCD5E0280C8BC900EC4DD9 /* UIViewController+Ext.swift in Sources */,
+				12DCD5F62817018D00EC4DD9 /* UIHelper.swift in Sources */,
 				12DCD5F42811D09B00EC4DD9 /* GFAvatarImageView.swift in Sources */,
 				12DCD5D0280A95E400EC4DD9 /* SearchVC.swift in Sources */,
 				12DCD5DE280C864E00EC4DD9 /* GFAlertVC.swift in Sources */,
