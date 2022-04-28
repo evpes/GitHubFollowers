@@ -28,6 +28,7 @@
 		12DCD5F42811D09B00EC4DD9 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5F32811D09B00EC4DD9 /* GFAvatarImageView.swift */; };
 		12DCD5F62817018D00EC4DD9 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5F52817018D00EC4DD9 /* UIHelper.swift */; };
 		12DCD5FE28184FE500EC4DD9 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5FD28184FE500EC4DD9 /* GFEmptyStateView.swift */; };
+		12DCD6002819679600EC4DD9 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5FF2819679600EC4DD9 /* UserInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		12DCD5F32811D09B00EC4DD9 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		12DCD5F52817018D00EC4DD9 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		12DCD5FD28184FE500EC4DD9 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		12DCD5FF2819679600EC4DD9 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				12DCD5CF280A95E400EC4DD9 /* SearchVC.swift */,
 				12DCD5D1280A962600EC4DD9 /* FavoritesListVC.swift */,
 				12DCD5D7280C7DE800EC4DD9 /* FollowerListVC.swift */,
+				12DCD5FF2819679600EC4DD9 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				12DCD5E7280D781D00EC4DD9 /* Follower.swift in Sources */,
 				12DCD5DA280C842A00EC4DD9 /* GFTitleLabel.swift in Sources */,
 				12DCD5FE28184FE500EC4DD9 /* GFEmptyStateView.swift in Sources */,
+				12DCD6002819679600EC4DD9 /* UserInfoVC.swift in Sources */,
 				12DCD5EC280D81F800EC4DD9 /* NetworkManager.swift in Sources */,
 				12DCD5D8280C7DE800EC4DD9 /* FollowerListVC.swift in Sources */,
 				12DCD5BC2805E53700EC4DD9 /* AppDelegate.swift in Sources */,
