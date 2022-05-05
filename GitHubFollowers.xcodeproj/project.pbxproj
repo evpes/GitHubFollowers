@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12730F072824426200808EBC /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12730F062824426200808EBC /* GFItemInfoView.swift */; };
 		12DCD5BC2805E53700EC4DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5BB2805E53700EC4DD9 /* AppDelegate.swift */; };
 		12DCD5BE2805E53700EC4DD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD5BD2805E53700EC4DD9 /* SceneDelegate.swift */; };
 		12DCD5C52805E53900EC4DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DCD5C42805E53900EC4DD9 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12730F062824426200808EBC /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		12DCD5B82805E53700EC4DD9 /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12DCD5BB2805E53700EC4DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12DCD5BD2805E53700EC4DD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				12DCD5FD28184FE500EC4DD9 /* GFEmptyStateView.swift */,
+				12730F062824426200808EBC /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				12DCD5F42811D09B00EC4DD9 /* GFAvatarImageView.swift in Sources */,
 				12DCD5D0280A95E400EC4DD9 /* SearchVC.swift in Sources */,
 				12DCD5DE280C864E00EC4DD9 /* GFAlertVC.swift in Sources */,
+				12730F072824426200808EBC /* GFItemInfoView.swift in Sources */,
 				12DCD5F22811CF7700EC4DD9 /* FollowerCell.swift in Sources */,
 				12DCD5EF280EC82300EC4DD9 /* GFError.swift in Sources */,
 				12FB095828201D5D00F69581 /* GFUserInfoHeaderVC.swift in Sources */,
