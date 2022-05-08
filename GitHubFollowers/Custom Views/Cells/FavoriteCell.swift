@@ -15,6 +15,7 @@ class FavoriteCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -34,12 +35,13 @@ class FavoriteCell: UITableViewCell {
         
         accessoryType = .disclosureIndicator
         let padding: CGFloat = 12
+                
         
         NSLayoutConstraint.activate([
             avatarImage.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             avatarImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
-            avatarImage.heightAnchor.constraint(equalToConstant: 18),
-            avatarImage.widthAnchor.constraint(equalToConstant: 18),
+            avatarImage.heightAnchor.constraint(equalToConstant: 60),
+            avatarImage.widthAnchor.constraint(equalToConstant: 60),
             
             userNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             userNameLabel.leadingAnchor.constraint(equalTo: avatarImage.trailingAnchor, constant: 24),
